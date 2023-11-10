@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+:root{
+  --background: #111d22;
+  --card-background: #1B2E36;
+
+  --pseudo-white: #F7F5E8;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: var(--background);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  color: var(--pseudo-white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#logo{
+  height: 3rem;
+  position:relative;
+  top: 1rem;
+  left: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+#searchbar{  
+  padding-left:1rem ;
+  height: 1.5rem;
+  width: 15.5rem;
+  background-color: var(--pseudo-white);
+  position: absolute;
+  top: 1.5rem;
+  left:8.19rem;
+  border-radius: 5rem;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.appContainer{
+  margin-left: 2rem;
+  margin-top: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 5rem);
+  width: calc(100vw - 2rem);
+  overflow: hidden;
+}
+
+#navBar{
+  height: calc(100% - 10rem);
+  width: 18rem;
+  /* background-color: #fff; */
+}
+
+#player{
+  height:6rem;
+  margin-top: 2rem;
+  margin-right:2rem;
+  bottom: 0
+}
+
+.card{
+  background-color: var(--card-background);
+  border-radius: 1.56rem;
+  box-shadow: .1rem .5rem .5rem black;
 }
